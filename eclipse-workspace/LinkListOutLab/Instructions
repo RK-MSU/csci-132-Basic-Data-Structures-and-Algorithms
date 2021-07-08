@@ -1,0 +1,78 @@
+General Overview
+
+Because of the obvious fact that it is election time in America, which means all the slimy politicians, 
+and all the political supporters on both sides of the aisle have come out of the woodwork spouting their 
+verbal abuse on each other I have decided to include this POLITICAL RIFF RAFF assignment for your pleasure 
+(I know, some won't see the pleasure). Every year ACM sponsors programming competitions at the local, regional 
+and world levels. This assignment is adapted from a problem that appeared at one of these competitions.
+
+Purpose
+
+The purpose of the assignment is to give you experience implementing a circular, doubly linked list that 
+contains a dummy header node (if you want a dummy node).
+
+Problem Statement
+
+In a serious attempt to downsize (reduce) the riffRaff in politics, The New Panda Party with the motto 
+"we promise to keep none of our promises." has decided on the following strategy. Every day all Panda 
+applicants will be placed in a large circle, facing inwards. Someone is arbitrarily chosen as number 1, 
+and the rest are numbered counter-clockwise up to N (who will be standing on 1's left). Starting from 1 
+and moving counter-clockwise, one PandaBS official counts off k applicants, while another official starts 
+from N and moves clockwise, counting m applicants. If both officials pick two different applicants the two 
+who were chosen are then sent off to have their brains studied for a cure; if both officials pick the same 
+person she (he) is sent off to become a politician. Each official then starts counting again at the next 
+available person and the process continues until no-one is left. Note that the two victims (sorry, trainees) 
+leave the ring simultaneously, so it is possible for one official to count a person already selected by the other official.
+
+Input File Format
+
+Write a program that asks the user for the name of a valid input file. If the file exists, the program should
+ read in (in that order) the three numbers (N, k and m; k, m > 0, 0 < N < 100) and determine the order in which
+  the applicants are sent off for political retraining. Each set of three numbers will be on a separate line and
+   the end of data will be signalled by three zeroes (0 0 0).
+
+Here is a sample input file:
+
+10 4 3
+0 0 0
+Output Requirements
+
+The output should be sent to a file named LinkedListProgram.txt. For each input, 
+the output should show the order in which the people are chosen. For each round 
+in which two different people are chosen, list the person chosen by the counter-clockwise 
+official first.
+
+Here is the required output for the above input file:
+
+Program 4
+---------
+
+N = 10, k = 4, m = 3
+
+Output
+------
+4 8
+9 5
+3 1
+2 6
+10 
+7
+
+End of Program 4
+Requirements and Grading
+
+12 points. You are required to design and implement your own linked list (in the style of 
+what we have done in lecture this week) as opposed to using a built-in class provided by 
+Java. The class you use should be doubly-linked (6 points), circular (3 point) and if it works of course(3 point).
+
+12 points. The program finds the correct answer. Your TA will test your program on some sample 
+	files that Hunter will provide to them after the assignment is due. Thus, please test your program thoroughly before submitting it.
+6 points. The program finds the solution in a reasonably efficient manner. For example, if N = 10, k = 1 and m = 450, 
+	the m judge should not circle around the candidates needlessly.
+5 points. The program sends it output to a file named LinkedListProgram.txt
+5 points. The program's output matches the required output format described above.
+10 points. The program uses good style. This includes factors such as appropriate commenting, 
+good object oriented design, readable code that is high quality, etc.
+What to Submit
+
+Upload your code to the D2L site. The D2L site must receive your code by Tuesday March 1 @ 5pm. Otherwise there will be a 15 percent per day late penalty.
